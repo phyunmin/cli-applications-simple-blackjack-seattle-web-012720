@@ -69,10 +69,12 @@ def runner
   init = initial_round
   prompt_user
   card_total = hit?(init)
-  if card_total > 21
+  until trig==1 do
+    if card_total > 21
     end_game
+    trig = 1
+    end
   end
+  
 end
-
-until
     
