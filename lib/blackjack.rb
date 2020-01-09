@@ -73,7 +73,7 @@ def runner
   until trig==1 do
     card_total = hit?(init)
     if card_total > 21
-    end_game
+    end_game(card_total)
     trig = 1
     end
   end
