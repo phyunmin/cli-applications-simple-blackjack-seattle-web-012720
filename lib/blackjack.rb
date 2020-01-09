@@ -41,12 +41,13 @@ def hit?
   prompt_user
   input = get_user_input
   if input=='s'
-  
+    
   elsif input == 'h'
     another_card = deal_card
   else
     invalid_command
   end
+  return card_total
 end
 
 def invalid_command
@@ -62,5 +63,8 @@ end
 def runner
   # code runner here
   welcome
+  initial_round
+  prompt_user
+  hit?
 end
     
