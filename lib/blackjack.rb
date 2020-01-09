@@ -69,8 +69,9 @@ def runner
   welcome
   init = initial_round
   prompt_user
-  card_total = hit?(init)
+  
   until trig==1 do
+    card_total = hit?(init)
     if card_total > 21
     end_game
     trig = 1
