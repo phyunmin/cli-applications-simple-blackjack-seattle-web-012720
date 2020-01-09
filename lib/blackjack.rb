@@ -65,7 +65,6 @@ end
 
 def runner
   # code runner here
-  trig = 0
   welcome
   init = initial_round
   card_total = hit?(init)
