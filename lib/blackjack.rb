@@ -34,6 +34,7 @@ def initial_round
   second_card = deal_card
   sum = first_card+second_card
   display_card_total(sum)
+  return sum
 end
 
 def hit?(current_card_total)
@@ -67,7 +68,7 @@ def runner
   welcome
   initial_round
   prompt_user
-  card_total = hit?
+  card_total = hit?()
   if card_total > 21
     end_game
   end
