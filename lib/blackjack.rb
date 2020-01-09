@@ -68,7 +68,8 @@ def runner
   trig = 0
   welcome
   init = initial_round
-  hit?(init)
+  total = hit?(init)
+  display_card_total()
   prompt_user
   
   until trig==1 do
