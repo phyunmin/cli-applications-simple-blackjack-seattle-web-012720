@@ -44,6 +44,8 @@ def hit?
   
   elsif input == 'h'
     another_card = deal_card
+  else
+    invalid_command
   end
 end
 
