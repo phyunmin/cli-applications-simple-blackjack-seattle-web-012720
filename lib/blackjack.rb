@@ -72,7 +72,7 @@ def runner
   display_card_total(card_total)
   prompt_user
   
-  until card_total>=21 do
+  until card_total>21 do
     card_total = hit?(init)
     if card_total > 21
     end_game(card_total)
