@@ -73,11 +73,7 @@ def runner
   prompt_user
   
   until card_total>21 do
-    card_total = hit?(init)
-    if card_total > 21
     end_game(card_total)
-    trig = 1
-    end
   end
   
 end
